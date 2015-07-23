@@ -1,0 +1,24 @@
+newstest2015.uedin-syntax.3866.en-de.txt 0.359 (1.0, 2.0)
+newstest2015.Neural-MT.4079.en-de.txt 0.334 (1.0, 2.0)
+++++++++++
+newstest2015.PROMT-Rule-based.3990.en-de.txt 0.26 (3.0, 4.0)
+newstest2015.online-A.0.en-de.txt 0.235 (3.0, 4.0)
+++++++++++
+newstest2015.online-B.0.en-de.txt 0.148 (5.0, 5.0)
+++++++++++
+newstest2015.LIMSI-KIT-Joint.4020.en-de.txt 0.086 (6.0, 6.0)
+++++++++++
+newstest2015.uedin-jhu-phrase.4072.en-de.txt 0.036 (7.0, 9.0)
+newstest2015.online-F.0.en-de.txt 0.003 (7.0, 11.0)
+newstest2015.online-C.4165.en-de.txt -0.001 (7.0, 11.0)
+newstest2015.KIT.4019.en-de.txt -0.018 (8.0, 11.0)
+newstest2015.CIMS.4117.en-de.txt -0.035 (9.0, 11.0)
+++++++++++
+newstest2015.dfki-experimental.4061.en-de.txt -0.133 (12.0, 13.0)
+newstest2015.online-E.0.en-de.txt -0.137 (12.0, 13.0)
+++++++++++
+newstest2015.udsSant.4051.en-de.txt -0.235 (14.0, 14.0)
+++++++++++
+newstest2015.Illinois.4084.en-de.txt -0.4 (15.0, 15.0)
+++++++++++
+newstest2015.ExEx.4124.en-de.txt -0.501 (16.0, 16.0)

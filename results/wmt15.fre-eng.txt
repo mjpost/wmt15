@@ -1,0 +1,10 @@
+newsdiscusstest2015.online-B.0.fr-en.txt 0.498 (1.0, 2.0)
+newsdiscusstest2015.LIMSI-CNRS-mosesSoulMoreFeatures.3999.fr-en.txt 0.446 (1.0, 3.0)
+newsdiscusstest2015.uedin-jhu-phrase.4105.fr-en.txt 0.415 (1.0, 3.0)
+++++++++++
+newsdiscusstest2015.UM-nDA.4036.fr-en.txt 0.275 (4.0, 5.0)
+newsdiscusstest2015.online-A.0.fr-en.txt 0.223 (4.0, 5.0)
+++++++++++
+newsdiscusstest2015.online-F.0.fr-en.txt -0.423 (6.0, 6.0)
+++++++++++
+newsdiscusstest2015.online-E.0.fr-en.txt -1.434 (7.0, 7.0)

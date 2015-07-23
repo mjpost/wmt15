@@ -1,0 +1,17 @@
+newstest2015.online-B.0.en-fi.txt 1.069 (1.0, 1.0)
+++++++++++
+newstest2015.online-A.0.en-fi.txt 0.548 (2.0, 2.0)
+++++++++++
+newstest2015.UU-unconstrained.3946.en-fi.txt 0.21 (3.0, 3.0)
+++++++++++
+newstest2015.abumatran-uncons-combo.4121.en-fi.txt 0.042 (4.0, 4.0)
+++++++++++
+newstest2015.abumatran-combo.4018.en-fi.txt -0.059 (5.0, 5.0)
+++++++++++
+newstest2015.AaltoMorphsRescored.3904.en-fi.txt -0.143 (6.0, 7.0)
+newstest2015.uedin-syntax.3940.en-fi.txt -0.184 (6.0, 8.0)
+newstest2015.abumatran-uncons.4116.en-fi.txt -0.212 (6.0, 8.0)
+++++++++++
+newstest2015.CMU.4075.en-fi.txt -0.342 (9.0, 9.0)
+++++++++++
+newstest2015.GF-Wide-coverage-system.4129.en-fi.txt -0.929 (10.0, 10.0)

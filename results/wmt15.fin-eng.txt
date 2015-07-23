@@ -1,0 +1,19 @@
+newstest2015.online-B.0.fi-en.txt 0.675 (1.0, 1.0)
+++++++++++
+newstest2015.PROMT-SMT.3989.fi-en.txt 0.28 (2.0, 4.0)
+newstest2015.online-A.0.fi-en.txt 0.246 (2.0, 5.0)
+newstest2015.UU-unconstrained.3977.fi-en.txt 0.236 (2.0, 5.0)
+newstest2015.uedin-jhu-phrase.4106.fi-en.txt 0.182 (4.0, 7.0)
+newstest2015.abumatran-combo.4010.fi-en.txt 0.16 (5.0, 7.0)
+newstest2015.uedin-syntax.4006.fi-en.txt 0.144 (5.0, 8.0)
+newstest2015.Illinois.3955.fi-en.txt 0.081 (7.0, 8.0)
+++++++++++
+newstest2015.abumatran-hfstmorph.4007.fi-en.txt -0.081 (9.0, 9.0)
+++++++++++
+newstest2015.Neural-MT.4062.fi-en.txt -0.177 (10.0, 10.0)
+++++++++++
+newstest2015.abumatran.3931.fi-en.txt -0.275 (11.0, 11.0)
+++++++++++
+newstest2015.LIMSI.4021.fi-en.txt -0.438 (12.0, 13.0)
+newstest2015.UoS.4059.fi-en.txt -0.513 (13.0, 14.0)
+newstest2015.UoS-stemmed.4135.fi-en.txt -0.52 (13.0, 14.0)

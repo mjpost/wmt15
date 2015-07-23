@@ -1,0 +1,18 @@
+newstest2015.online-B.0.de-en.txt 0.567 (1.0, 1.0)
+++++++++++
+newstest2015.uedin-jhu-phrase.4102.de-en.txt 0.319 (2.0, 3.0)
+newstest2015.online-A.0.de-en.txt 0.298 (2.0, 4.0)
+newstest2015.uedin-syntax.4027.de-en.txt 0.258 (3.0, 5.0)
+newstest2015.KIT.4017.de-en.txt 0.228 (4.0, 5.0)
+++++++++++
+newstest2015.RWTH.4023.de-en.txt 0.141 (6.0, 7.0)
+newstest2015.Neural-MT.4097.de-en.txt 0.095 (6.0, 7.0)
+++++++++++
+newstest2015.Illinois.4085.de-en.txt -0.172 (8.0, 10.0)
+newstest2015.dfki-experimental.4060.de-en.txt -0.177 (8.0, 10.0)
+newstest2015.online-C.4166.de-en.txt -0.221 (9.0, 10.0)
+++++++++++
+newstest2015.online-F.0.de-en.txt -0.304 (11.0, 11.0)
+++++++++++
+newstest2015.UM-nDA.4137.de-en.txt -0.489 (12.0, 13.0)
+newstest2015.online-E.0.de-en.txt -0.544 (12.0, 13.0)

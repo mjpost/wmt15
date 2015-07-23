@@ -1,0 +1,26 @@
+newstest2015.CU-Chimera.3992.en-cs.txt 0.686 (1.0, 1.0)
+++++++++++
+newstest2015.online-B.0.en-cs.txt 0.515 (2.0, 3.0)
+newstest2015.uedin-jhu-phrase.4069.en-cs.txt 0.503 (2.0, 3.0)
+++++++++++
+newstest2015.Neural-MT.4096.en-cs.txt 0.467 (4.0, 4.0)
+++++++++++
+newstest2015.online-A.0.en-cs.txt 0.426 (5.0, 5.0)
+++++++++++
+newstest2015.uedin-syntax.3939.en-cs.txt 0.261 (6.0, 6.0)
+++++++++++
+newstest2015.CU-TectoMT.3949.en-cs.txt 0.209 (7.0, 7.0)
+++++++++++
+newstest2015.commercial1.3987.en-cs.txt 0.114 (8.0, 8.0)
+++++++++++
+newstest2015.tuning-task-DCU.en-cs.txt -0.342 (9.0, 11.0)
+newstest2015.tuning-task-AFRL.en-cs.txt -0.342 (9.0, 11.0)
+newstest2015.tuning-task-bleu-MIRA-dense.en-cs.txt -0.346 (9.0, 11.0)
+++++++++++
+newstest2015.tuning-task-USAAR-Tuna-Saarland.en-cs.txt -0.373 (12.0, 12.0)
+++++++++++
+newstest2015.tuning-task-bleu-MERT.en-cs.txt -0.406 (13.0, 13.0)
+++++++++++
+newstest2015.tuning-task-METEOR-CMU.en-cs.txt -0.563 (14.0, 14.0)
+++++++++++
+newstest2015.tuning-task-bleu-MIRA-sparse.en-cs.txt -0.808 (15.0, 15.0)

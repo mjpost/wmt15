@@ -1,0 +1,18 @@
+newstest2015.online-G.0.ru-en.txt 0.494 (1.0, 1.0)
+++++++++++
+newstest2015.online-B.0.ru-en.txt 0.311 (2.0, 2.0)
+++++++++++
+newstest2015.PROMT-Rule-based.3993.ru-en.txt 0.129 (3.0, 6.0)
+newstest2015.MITLL-AFRL-phrase-based.4089.ru-en.txt 0.116 (3.0, 6.0)
+newstest2015.MITLL-AFRL-pbfac.4077.ru-en.txt 0.113 (3.0, 6.0)
+newstest2015.online-A.0.ru-en.txt 0.104 (3.0, 7.0)
+newstest2015.MITLL-AFRL-hiero.4090.ru-en.txt 0.051 (6.0, 8.0)
+newstest2015.LIMSI-NCode-SOUL.3998.ru-en.txt 0.01 (7.0, 10.0)
+newstest2015.uedin-syntax.4005.ru-en.txt -0.021 (8.0, 10.0)
+newstest2015.uedin-jhu-phrase.4065.ru-en.txt -0.031 (8.0, 10.0)
+++++++++++
+newstest2015.USAAR-gacha.4052.ru-en.txt -0.218 (11.0, 11.0)
+++++++++++
+newstest2015.USAAR-gacha.3986.ru-en.txt -0.278 (12.0, 12.0)
+++++++++++
+newstest2015.online-F.0.ru-en.txt -0.781 (13.0, 13.0)
