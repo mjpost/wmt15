@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+﻿#!/usr/bin/env python
 #encoding: utf-8
 
 """
@@ -57,7 +57,7 @@ import itertools
 import xml.etree.ElementTree as ET
 from collections import Counter
 
-def extract_all_judgements(ranking):
+def extract_all_judgements(ranking, expand_multi_systems=True):
     systems_j = []
     ranks_j = []
     if len(ranking.findall(".//translation")) == 0:
@@ -65,11 +65,19 @@ def extract_all_judgements(ranking):
     else:
         for i, rank in enumerate(ranking.findall(".//translation")):
             rank_i = rank.attrib['rank']
-            for system_name in rank.attrib['system'].split(','):
+            if expand_multi_systems:
+                for system_name in rank.attrib['system'].split(','):
+                    if EXCLUDE_REF and system_name[0:3] == 'ref':
+                        pass
+                    else:
+                        systems_j.append(system_name)
+                        ranks_j.append(rank_i)
+            else:
+                system_name = rank.attrib['system']
                 if EXCLUDE_REF and system_name[0:3] == 'ref':
                     pass
                 else:
-                    systems_j.append(system_name)
+                    systems_j.append(system_name.replace(',', '+'))
                     ranks_j.append(rank_i)
 
     return zip(systems_j, ranks_j)
@@ -115,7 +123,7 @@ for hit in hits:
             # This groups together the ranking task that the pairwise judgments came from
             csv_row['rankingID'] = resultno
 
-            systems_ranks = extract_all_judgements(result)
+            systems_ranks = extract_all_judgements(result, False)
             for element in itertools.combinations(systems_ranks, N):
                 for i, system_rank in enumerate(element):
                     systemID = "system{}Id".format(str(i+1))
