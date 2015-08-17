@@ -3,10 +3,17 @@
 
 """
 This is a script for converting the raw Appraise XML file to pairwise comparisons
-in the "WMT CSV" format. 
+in the "WMT CSV" format. WMT15 introduced the collapsing of identical system outputs,
+and then expanding systems with identical outputs into a set of much larger pairwise
+judgments. To suppress this behavior (for example, for computing int{er,ra}-annotator
+agreement, use -c.
 
 Usage: python wmt15.xml.gz
 -> produces a CSV file for each language pair, anonymizing the judges.
+
+Usage: python -c wmt15.xml.gz
+-> produces a CSV file for each language pair, anonymizing the judges, not expanding
+   the judgments.
 
 Example XML:
 
@@ -43,19 +50,25 @@ Example XML:
     ...
 
 Original Author: Keisuke Sakaguchi
-WMT modifications by: Matt Post
+WMT modifications by: Matt Post and Christian Federmann
 """
-
-EXCLUDE_REF = True
-N = 2 # extracting pairwise judgements
 
 import sys
 import os
 import csv 
 import gzip
+import argparse
 import itertools
 import xml.etree.ElementTree as ET
 from collections import Counter
+
+PARSER = argparse.ArgumentParser(description="Convert XML to collapsed / uncollapsed pairwise judgments")
+PARSER.add_argument("-r", dest='include_ref', default=False, action='store_true',
+                    help="Don't throw out the reference (if present)")
+PARSER.add_argument("-c", dest='expand', default=True, action='store_false',
+                    help="don't expand out systems with identical outputs (keep collapsed)")
+PARSER.add_argument("xml_path", help="path to XML file")
+args = PARSER.parse_args()
 
 def extract_all_judgements(ranking, expand_multi_systems=True):
     systems_j = []
@@ -67,16 +80,12 @@ def extract_all_judgements(ranking, expand_multi_systems=True):
             rank_i = rank.attrib['rank']
             if expand_multi_systems:
                 for system_name in rank.attrib['system'].split(','):
-                    if EXCLUDE_REF and system_name[0:3] == 'ref':
-                        pass
-                    else:
+                    if system_name[0:3] != 'ref' or args.include_ref:
                         systems_j.append(system_name)
                         ranks_j.append(rank_i)
             else:
                 system_name = rank.attrib['system']
-                if EXCLUDE_REF and system_name[0:3] == 'ref':
-                    pass
-                else:
+                if system_name[0:3] != 'ref' or args.include_ref:
                     systems_j.append(system_name.replace(',', '+'))
                     ranks_j.append(rank_i)
 
@@ -88,7 +97,7 @@ def anonymize_judge(judgeID):
         judges[judgeID] = 'judge%d' % (len(judges)+1)
     return judges[judgeID]
 
-xmlPath = sys.argv[1]
+xmlPath = args.xml_path
 xmlStream = gzip.GzipFile(xmlPath) if xmlPath.endswith('.gz') else open(xmlPath)
 elem = ET.parse(xmlStream).getroot()
 
@@ -123,8 +132,8 @@ for hit in hits:
             # This groups together the ranking task that the pairwise judgments came from
             csv_row['rankingID'] = resultno
 
-            systems_ranks = extract_all_judgements(result, False)
-            for element in itertools.combinations(systems_ranks, N):
+            systems_ranks = extract_all_judgements(result, args.expand)
+            for element in itertools.combinations(systems_ranks, 2):
                 for i, system_rank in enumerate(element):
                     systemID = "system{}Id".format(str(i+1))
                     systemRank = "system{}rank".format(str(i+1))
