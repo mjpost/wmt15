@@ -57,7 +57,7 @@ import itertools
 import xml.etree.ElementTree as ET
 from collections import Counter
 
-def extract_all_judgements(rankings):
+def extract_all_judgements(ranking):
     systems_j = []
     ranks_j = []
     if len(ranking.findall(".//translation")) == 0:
