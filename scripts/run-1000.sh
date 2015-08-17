@@ -7,7 +7,7 @@
 
 #$ -S /bin/bash -V -cwd
 #$ -o /dev/null -j y
-#$ -l h_rt=1:00:00
+#$ -l h_rt=0:10:00
 #$ -t 1:1000
 
 . ~/.bashrc
