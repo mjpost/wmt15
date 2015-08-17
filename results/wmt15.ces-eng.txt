@@ -1,20 +1,22 @@
-newstest2015.online-B.0.cs-en.txt 0.627 (1.0, 1.0)
+newstest2015.online-B.0.cs-en.txt 0.619 (1.0, 1.0)
 ++++++++++
-newstest2015.uedin-jhu-phrase.4071.cs-en.txt 0.569 (2.0, 3.0)
-newstest2015.uedin-syntax.4004.cs-en.txt 0.543 (2.0, 4.0)
-newstest2015.Neural-MT.4088.cs-en.txt 0.507 (3.0, 4.0)
+newstest2015.uedin-jhu-phrase.4071.cs-en.txt 0.574 (2.0, 2.0)
 ++++++++++
-newstest2015.online-A.0.cs-en.txt 0.445 (5.0, 5.0)
+newstest2015.uedin-syntax.4004.cs-en.txt 0.532 (3.0, 4.0)
+newstest2015.Neural-MT.4088.cs-en.txt 0.518 (3.0, 4.0)
 ++++++++++
-newstest2015.CU-TectoMT.4138.cs-en.txt -0.137 (6.0, 7.0)
-newstest2015.tuning-task-bleu-MIRA-dense.cs-en.txt -0.177 (7.0, 9.0)
-newstest2015.tuning-task-ILLC-UvA.cs-en.txt -0.188 (7.0, 10.0)
-newstest2015.tuning-task-bleu-MERT.cs-en.txt -0.2 (7.0, 11.0)
-newstest2015.tuning-task-AFRL.cs-en.txt -0.205 (8.0, 11.0)
+newstest2015.online-A.0.cs-en.txt 0.436 (5.0, 5.0)
+++++++++++
+newstest2015.CU-TectoMT.4138.cs-en.txt -0.125 (6.0, 6.0)
+++++++++++
+newstest2015.tuning-task-bleu-MIRA-dense.cs-en.txt -0.182 (7.0, 9.0)
+newstest2015.tuning-task-ILLC-UvA.cs-en.txt -0.189 (7.0, 10.0)
+newstest2015.tuning-task-bleu-MERT.cs-en.txt -0.196 (7.0, 11.0)
+newstest2015.tuning-task-AFRL.cs-en.txt -0.21 (8.0, 11.0)
 newstest2015.tuning-task-USAAR-Tuna-Saarland.cs-en.txt -0.22 (9.0, 11.0)
-newstest2015.tuning-task-DCU.cs-en.txt -0.256 (11.0, 13.0)
-newstest2015.tuning-task-METEOR-CMU.cs-en.txt -0.286 (12.0, 14.0)
-newstest2015.tuning-task-bleu-MIRA-sparse.cs-en.txt -0.311 (13.0, 15.0)
-newstest2015.tuning-task-HKUST-MEANT.cs-en.txt -0.331 (14.0, 15.0)
 ++++++++++
-newstest2015.Illinois.4083.cs-en.txt -0.379 (16.0, 16.0)
+newstest2015.tuning-task-DCU.cs-en.txt -0.263 (12.0, 13.0)
+newstest2015.tuning-task-METEOR-CMU.cs-en.txt -0.297 (13.0, 15.0)
+newstest2015.tuning-task-bleu-MIRA-sparse.cs-en.txt -0.32 (13.0, 15.0)
+newstest2015.tuning-task-HKUST-MEANT.cs-en.txt -0.32 (13.0, 15.0)
+newstest2015.Illinois.4083.cs-en.txt -0.358 (15.0, 16.0)
