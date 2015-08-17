@@ -1,0 +1,105 @@
+﻿PS C:\Users\chrife\Documents\GitHub\Appraise\appraise> foreach ($lang in ('ces', 'deu', 'fre', 'fin', 'rus')) { C:\Pytho
+n27\python.exe .\compute_agreement_scores.py C:\Users\chrife\Dropbox\mjpost-wmt15\data\wmt15.eng-$lang.csv --processes=4
+ --inter --verbose }
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+       English-Czech  0.848  0.333  0.772    73626    86837    44356   136855
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+      English-German  0.823  0.339  0.732    13182    16020    14860    54447
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+      English-French  0.702  0.333  0.553    13351    19026    11593    34512
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+     English-Finnish  0.815  0.361  0.710     8663    10631     6428    32694
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+     English-Russian  0.717  0.336  0.574    11062    15429    18628    49302
+PS C:\Users\chrife\Documents\GitHub\Appraise\appraise> foreach ($lang in ('ces', 'deu', 'fre', 'fin', 'rus')) { C:\Pytho
+n27\python.exe .\compute_agreement_scores.py C:\Users\chrife\Dropbox\mjpost-wmt15\data\collapsed\wmt15.eng-$lang.csv --p
+rocesses=4 --inter --verbose }
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+       English-Czech  0.652  0.381  0.438    10532    16144     9131    58947
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+      English-German  0.657  0.406  0.423     2525     3842     3384    29752
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+      English-French  0.560  0.356  0.317     5088     9090     4824    22858
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+     English-Finnish  0.727  0.394  0.549     4280     5888     3228    24399
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+     English-Russian  0.558  0.334  0.336     3913     7013    10867    34546
+PS C:\Users\chrife\Documents\GitHub\Appraise\appraise> foreach ($lang in ('ces', 'deu', 'fre', 'fin', 'rus')) { C:\Pytho
+n27\python.exe .\compute_agreement_scores.py C:\Users\chrife\Dropbox\mjpost-wmt15\data\wmt15.$lang-eng.csv --processes=4
+ --inter --verbose }
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+       Czech-English  0.863  0.338  0.793    21191    24556    33613    85877
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+      German-English  0.848  0.341  0.770     8125     9577    10684    40535
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+      French-English  0.729  0.338  0.591    11175    15324     8181    29770
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+     Finnish-English  0.812  0.338  0.716     6018     7412     8687    31577
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+     Russian-English  0.794  0.334  0.690     8461    10661    15954    44539
+PS C:\Users\chrife\Documents\GitHub\Appraise\appraise> foreach ($lang in ('ces', 'deu', 'fre', 'fin', 'rus')) { C:\Pytho
+n27\python.exe .\compute_agreement_scores.py C:\Users\chrife\Dropbox\mjpost-wmt15\data\collapsed\wmt15.$lang-eng.csv --p
+rocesses=4 --inter --verbose }
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+       Czech-English  0.672  0.395  0.458     1995     2970     3215    24473
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+      German-English  0.669  0.426  0.423     1504     2248     1652    19468
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+      French-English  0.596  0.385  0.343     4178     7012     2864    19375
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+     Finnish-English  0.628  0.392  0.388     1212     1929     2333    17309
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+     Russian-English  0.599  0.362  0.372     1537     2564     4599    23614
+PS C:\Users\chrife\Documents\GitHub\Appraise\appraise> foreach ($lang in ('ces', 'deu', 'fre', 'fin', 'rus')) { C:\Pytho
+n27\python.exe .\compute_agreement_scores.py C:\Users\chrife\Dropbox\mjpost-wmt15\data\wmt15.eng-$lang.csv --processes=4
+ --intra --verbose }
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+       English-Czech  0.894  0.333  0.841     8258     9239    14502    42663
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+      English-German  0.897  0.337  0.845     1907     2125     3141    11112
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+      English-French  0.766  0.336  0.648     2849     3718     3990    10621
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+     English-Finnish  0.883  0.349  0.820     4438     5027     4506    19552
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+     English-Russian  0.798  0.348  0.691     2729     3418     6187    14284
+PS C:\Users\chrife\Documents\GitHub\Appraise\appraise> foreach ($lang in ('ces', 'deu', 'fre', 'fin', 'rus')) { C:\Pytho
+n27\python.exe .\compute_agreement_scores.py C:\Users\chrife\Dropbox\mjpost-wmt15\data\collapsed\wmt15.eng-$lang.csv --p
+rocesses=4 --intra --verbose }
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+       English-Czech  0.743  0.382  0.584     1357     1827     2267    14710
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+      English-German  0.809  0.412  0.676      594      734      491     4674
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+      English-French  0.625  0.346  0.426     1054     1687     1613     6707
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+     English-Finnish  0.811  0.377  0.697     2177     2683     2262    13836
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+     English-Russian  0.663  0.336  0.492      857     1293     3436     9081
+PS C:\Users\chrife\Documents\GitHub\Appraise\appraise> foreach ($lang in ('ces', 'deu', 'fre', 'fin', 'rus')) { C:\Pytho
+n27\python.exe .\compute_agreement_scores.py C:\Users\chrife\Dropbox\mjpost-wmt15\data\wmt15.$lang-eng.csv --processes=4
+ --intra --verbose }
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+       Czech-English  0.923  0.337  0.884     1334     1445     2533     6620
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+      German-English  0.948  0.346  0.920      765      807      649     2692
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+      French-English  0.808  0.348  0.705     1230     1523     1195     5118
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+     Finnish-English  0.874  0.333  0.811      547      626      952     2912
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+     Russian-English  0.859  0.357  0.780     2730     3179     5366    11666
+PS C:\Users\chrife\Documents\GitHub\Appraise\appraise> foreach ($lang in ('ces', 'deu', 'fre', 'fin', 'rus')) { C:\Pytho
+n27\python.exe .\compute_agreement_scores.py C:\Users\chrife\Dropbox\mjpost-wmt15\data\collapsed\wmt15.$lang-eng.csv --p
+rocesses=4 --intra --verbose }
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+       Czech-English  0.821  0.416  0.694      156      190      145     1470
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+      German-English  0.896  0.478  0.801      233      260       24     1042
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+      French-English  0.717  0.423  0.510      497      693      285     3187
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+     Finnish-English  0.738  0.402  0.562      107      145      117      982
+Language pair        pA     pE     kappa  (agree, comparable, ties, total)
+     Russian-English  0.673  0.339  0.506      437      649     1280     4720
+PS C:\Users\chrife\Documents\GitHub\Appraise\appraise>
