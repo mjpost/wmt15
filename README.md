@@ -18,7 +18,7 @@
 
 1. Now, to compute the rankings. Install wmt-trueskill:
 
-        git clone https://github.com/keisks/wmt-trueskill
+        git clone https://github.com/mjpost/wmt-trueskill
 
 2. Install the trueskill code
 
